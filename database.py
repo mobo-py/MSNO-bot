@@ -1,6 +1,11 @@
 import aiosqlite
+import os
 
 DATABASE = "database/msno.db"
+
+
+# Create database folder if it doesn't exist
+os.makedirs("database", exist_ok=True)
 
 
 async def create_tables():
